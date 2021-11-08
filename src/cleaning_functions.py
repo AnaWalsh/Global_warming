@@ -10,8 +10,6 @@ from bs4 import BeautifulSoup
 
 
 
-
-
 def getAverageOceanTemperatureByDecade():
     """
     This function is a web scraping function. It extracts the content from a table in the URL and it stores it a dictionary.
