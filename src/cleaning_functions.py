@@ -12,9 +12,9 @@ from bs4 import BeautifulSoup
 
 def getAverageOceanTemperatureByDecade():
     """
-    This function is a web scraping function. It extracts the content from a table in the URL and it stores it a dictionary.
+    This is a web scraping function. It extracts the content from a table in the URL and it stores it a dictionary.
     Arggs:
-    - Table
+    ()
     Returns:
      Dictionary
     """
@@ -34,9 +34,9 @@ def getAverageOceanTemperatureByDecade():
 
 def buildDictionaryOfPopulationFrom(decadeStart, decadeEnd, df):
     """
-    This function stores in a dictionary the values from a column in 
-    Arggs:()
-    - ()
+    This function stores in a dictionary the decade and average values for the population of each decade. 
+    Arggs:
+     decadeStart, decadeEnd, df
     Returns:
      Dictionary
     """
@@ -50,10 +50,10 @@ def average_on_decade(df, decade):
     """
     This function calculates the average of 10 values in a range from a df.
     Arggs:
-    - ()
+    ()
     Returns:
-    a)Total value of the items in the range divided by the number of items.
-    b)Total value of the items in the range divided by one less of the number of items. 
+    a)Average in a decade (total value of the items in the range divided by the number of items).
+    b)Average in a decade (Total value of the items in the range divided by one less of the number of items). 
     """
     total_items = 10
     count_total = 0
@@ -68,9 +68,9 @@ def average_on_decade(df, decade):
 
 def buildCompleteDataframe(temperatura: dict, poblacion: dict, since, till):
     """
-    This function builds a df from dictionaries and a list in a df..
+    This function builds a df from dictionaries and a list in a df.
     Arggs:
-    - (Temperature dictionary, population dictionary and list of )
+    - (Temperature dictionary(2000 : "13.5"), population dictionary (2000 : 7003495863047), since(year), till(year)
     Returns:
     a)Total value of the items in the range divided by the number of items.
     b)Total value of the items in the range divided by one less of the number of items. 
@@ -79,9 +79,9 @@ def buildCompleteDataframe(temperatura: dict, poblacion: dict, since, till):
     index_counter = 0
 
     for i in range(since, till, 10):
-        
+               # this is the list of decade         
         list_of_temp_population = []
-        
+       # to fill the first value of the row 
         list_of_temp_population.append(i)
         
         if temperatura.get(i) is not None:
@@ -94,9 +94,10 @@ def buildCompleteDataframe(temperatura: dict, poblacion: dict, since, till):
             list_of_temp_population.append(poblacion.get(i))
         else:
             list_of_temp_population.append("0")
-            
+
+          # {decada: año, temperatura, poblacion}   
         dictionary[index_counter] = list_of_temp_population
-        
+        #{0 : ["1950", "13.5", 123456789]}
         index_counter+=1 
 
         
