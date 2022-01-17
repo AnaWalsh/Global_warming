@@ -1,30 +1,28 @@
-# W3-pipelines-project
-In this repository you can find a project that consists of using a dataset to analyze a specific topic and complement the information using an API or web scraping.The repository is divided into several folders containing the following files:
+# Global Warming Project
 
-1. README
-2. "Cleaning_data.ipynb" : in this file the cleaning methods are applied. The functions that are applied are obtained from the file.
-3. "Visualization.ipynb": in this file the data are visualized by means of graphics, using seaborn.
+## Goal 🏁
 
-4. Folder src: "data_extraction.py": in this file are the functions used for data cleaning. 4. "visualization_functions.py": the purpose of this file was to contain the functions used for data visualization, but in this case, it was not necessary to use any functions.
+In this repository you can find a project that consists on using a dataset to analyze a specific topic and complement the information using an API or web scraping.
 
-5. main.py : this file contains all the changes made to the data and the results obtained.
+## Structure of the project files 
 
-# Objective
-The objective of this project is to test through data whether the hypothesis formulated is true.
+- Notebooks: one for cleaning the data and another one for visualization.
 
-# Hypothesis
-The increase in ocean temperatures in recent decades is related to population growth.
+- Data: 
 
-# DataSets
-Two DataSets have been used for this project:
-- World Population by Year (Kaggle)
-- Global atmospheric CO2 Concentration (https://ourworldindata.org/grapher/monthly-atm-co2?country=~OWID_WRL)
+    - World Population by Year dataset from [kaggle.](https://www.kaggle.com/sansuthi/world-population-by-year)
+
+    - [Global atmospheric CO2 Concentration](https://ourworldindata.org/grapher/monthly-atm-co2?country=~OWID_WRL)
+
+    - [Ocean temperature data](https://www.currentresults.com/Environment-Facts/changes-in-earth-temperature.php)
 
 
-# Web scraping
+- src folder: functions that have been used to clean the data.
 
-The ocean temperature data have been extracted from the table found at the following URL: https://www.currentresults.com/Environment-Facts/changes-in-earth-temperature.php
 
+# Working plan
+
+The objective of this project is to test through data whether the hypothesis formulated is true: " The increase in ocean temperatures in recent decades is related to population growth."
 
 # Conclusion
 
@@ -32,9 +30,13 @@ As can be seen in the graphs, there is a notable increase in the temperature of 
 
 # Libraries
 
-The following libraries have been used for this project: 
+[Pandas](https://pandas.pydata.org/docs/)
 
-pandas
-numpy
-seaborn
+[Matplotlib](https://matplotlib.org/)
+
+[Seaborn](https://seaborn.pydata.org/)
+
+[Numpy](https://numpy.org/doc/)
+
+
 
