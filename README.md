@@ -1,5 +1,7 @@
 # Global Warming Project
 
+![foto](https://github.com/AnaWalsh/Global_warming/blob/main/Images/polar_bear.png)
+
 ## Goal 🏁
 
 In this repository you can find a project that consists on using a dataset to analyze a specific topic and complement the information using an API or web scraping.
